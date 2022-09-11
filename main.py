@@ -11,11 +11,11 @@ import asyncio
 
 API_ID = os.environ.get("API_ID", None) 
 API_HASH = os.environ.get("API_HASH", None) 
-STRING_SESSION = os.environ.get("STRING", None) 
+STRING = os.environ.get("STRING", None) 
 MONGO_URL = os.environ.get("MONGO_URL", None)
 
 
-bot = Client(STRING_SESSION, API_ID, API_HASH)
+bot = Client(STRING, API_ID, API_HASH)
 
 
 async def is_admins(chat_id: int):
